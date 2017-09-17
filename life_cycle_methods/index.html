@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Life Cycles Vue</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+	<div id="vue">
+		<h3>{{ mensaje }}</h3>
+		<button v-on:click="mensaje = 'CAMBIANDO EL MENSAJE'">Cambiar mensaje</button>	
+		<button v-on:click="destruir">Destruir instancia</button>	
+	</div>
+
+	<script src="index.js"></script>
+</body>
+</html>
