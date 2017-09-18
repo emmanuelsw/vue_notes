@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Life Cycles Vue</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+	<div id="vue">
+		<img :src="imagen">
+		<button @click="changeImage">Cambiar imagen</button>
+	</div>
+
+	<script>
+
+		new Vue({
+			el: '#vue',
+			data: {
+				imagen: 'http://lorempixel.com/400/400'
+			},
+			methods: {
+				changeImage: function() {
+					this.imagen = 'http://lorempixel.com/200/200';
+				}
+			}
+		})
+
+	</script>
+</body>
+</html>
