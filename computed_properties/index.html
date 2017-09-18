@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Life Cycles Vue</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+	<div id="vue">
+		<button v-on:click="primero++">Incrementar el primero</button>
+		<button v-on:click="segundo++">Incrementar el segundo</button>
+		<button v-on:click="tercero++">Incrementar el tercero</button>
+		<button v-on:click="cuarto++">Incrementar el cuarto</button>
+
+		<hr>
+		{{ suma }}
+		<p>Primero: {{ primero }}</p>
+		<p>Segundo: {{ segundo }}</p>
+		<p>Tercero: {{ tercero }}</p>
+		<p>Cuarto: {{ cuarto }}</p>
+		<h3>Total: {{ total }}</h3>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+</html>
