@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>v-if v-else</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+	<div id="vue">
+		<label>Name:</label>
+		<input type="text" v-model="name">
+
+		<div v-if="name == 'Emmanuel'" style="color: green">Correct</div>
+		<div v-else style="color: red">Incorrect</div>
+	</div>
+
+	<script>
+
+		new Vue({
+			el: '#vue',
+			data: {
+				name: ''
+			}
+		})
+
+	</script>
+</body>
+</html>
